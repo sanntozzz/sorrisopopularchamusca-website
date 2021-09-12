@@ -34,7 +34,7 @@ export default function ContacteNosPage() {
         <div className="bg-gray-50">
           <div className="max-w-screen-2xl mx-auto px-6 py-12">
             <div className="space-y-12">
-              <div className="grid md:grid-cols-3 gap-12">
+              <div className="grid lg:grid-cols-3 gap-6">
                 <div className="text-center space-y-3">
                   <div className="text-xl font-bold">Morada</div>
                   <a
