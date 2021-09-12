@@ -6,7 +6,7 @@ const meta = {
   description:
     "Na Sorriso Popular Chamusca a Avaliação Oral é gratuita e sem compromisso! Será avaliado por um dos nossos médicos dentistas. Sem custos e sem compromisso!",
   type: "website",
-  url: "",
+  url: "https://sorrisopopularchamusca.vercel.app/",
   image:
     "https://raw.githubusercontent.com/sanntozzz/sorrisopopularchamusca-website/main/public/images/DefaultLogo.png",
 };
