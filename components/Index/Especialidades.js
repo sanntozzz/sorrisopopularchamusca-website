@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 
@@ -119,7 +120,9 @@ export default function Especialidades() {
                           <div className="space-y-3">
                             {item.modaText.map((item, index) => {
                               return (
-                                <div className="text-sm text-left">{item}</div>
+                                <div key={index} className="text-sm text-left">
+                                  {item}
+                                </div>
                               );
                             })}
                           </div>
@@ -131,17 +134,16 @@ export default function Especialidades() {
               })}
             </div>
             <div className="flex justify-center">
-              <a
-                href="/especialidades"
-                className="bg-white rounded-md py-3 w-full max-w-xs flex justify-center cursor-pointer drop-shadow-lg"
-              >
-                <div className="flex items-center space-x-3 text-darkBlue">
-                  <span className="text-base font-bold uppercase">
-                    Ver mais
-                  </span>
-                  <FaIcons.FaChevronRight />
+              <Link href="/especialidades">
+                <div className="bg-white rounded-md py-3 w-full max-w-xs flex justify-center cursor-pointer drop-shadow-lg">
+                  <div className="flex items-center space-x-3 text-darkBlue">
+                    <span className="text-base font-bold uppercase">
+                      Ver mais
+                    </span>
+                    <FaIcons.FaChevronRight />
+                  </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

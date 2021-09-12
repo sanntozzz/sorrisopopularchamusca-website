@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as FaIcons from "react-icons/fa";
 
 const text = [
@@ -28,17 +29,16 @@ export default function Hero() {
             <div className="font-bold">
               E já está, tenha o sorriso que sempre sonhou!
             </div>
-            <a
-              href="/contacte-nos"
-              className="bg-white rounded-md py-3 w-full flex justify-center cursor-pointer"
-            >
-              <div className="flex items-center space-x-3 text-darkBlue">
-                <span className="text-base text-center font-bold uppercase">
-                  Marque já aqui a sua consulta
-                </span>
-                <FaIcons.FaChevronRight />
+            <Link href="/contacte-nos">
+              <div className="bg-white rounded-md py-3 w-full flex justify-center cursor-pointer">
+                <div className="flex items-center space-x-3 text-darkBlue">
+                  <span className="text-base text-center font-bold uppercase">
+                    Marque já aqui a sua consulta
+                  </span>
+                  <FaIcons.FaChevronRight />
+                </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

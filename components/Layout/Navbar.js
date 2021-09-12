@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 
@@ -60,19 +61,21 @@ export default function Navbar() {
       <div className="w-full bg-white">
         <div className="max-w-screen-2xl mx-auto px-6">
           <div className="flex items-center justify-between py-3">
-            <a href="/" className="flex items-center w-28">
-              <Image src={Logo} alt="Logo" />
-            </a>
+            <Link href="/">
+              <a className="flex items-center w-28">
+                <Image src={Logo} alt="Logo" />
+              </a>
+            </Link>
             <div className="hidden lg:block space-x-9">
-              {menu.map((item) => {
+              {menu.map((item, index) => {
                 return (
-                  <a
-                    href={item.path}
-                    rel="noopener noreferrer"
-                    className="inline-block text-gray-900 hover:text-darkBlue text-sm font-bold border-b-2 px-2 border-transparent  hover:border-darkBlue cursor-pointer"
-                  >
-                    {item.text}
-                  </a>
+                  <div key={index} className="inline-block">
+                    <Link href={item.path}>
+                      <a className="text-gray-900 hover:text-darkBlue text-sm font-bold border-b-2 px-2 border-transparent  hover:border-darkBlue">
+                        {item.text}
+                      </a>
+                    </Link>
+                  </div>
                 );
               })}
             </div>
@@ -90,15 +93,15 @@ export default function Navbar() {
       >
         <div className="flex justify-center items-center">
           <div className="text-center space-y-12">
-            {menu.map((item) => {
+            {menu.map((item, index) => {
               return (
-                <a
-                  href={item.path}
-                  rel="noopener noreferrer"
-                  className="block text-gray-900 hover:text-darkBlue text-xl border-b-2  border-transparent  hover:border-darkBlue"
-                >
-                  {item.text}
-                </a>
+                <div key={index}>
+                  <Link href={item.path}>
+                    <a className="block text-gray-900 hover:text-darkBlue text-xl border-b-2  border-transparent  hover:border-darkBlue">
+                      {item.text}
+                    </a>
+                  </Link>
+                </div>
               );
             })}
           </div>

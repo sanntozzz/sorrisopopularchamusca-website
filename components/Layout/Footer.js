@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 
@@ -49,9 +50,11 @@ export default function Footer() {
           <div className="grid sm:grid-cols-4 gap-12">
             <div>
               <div className="w-32">
-                <a href="/">
-                  <Image src={Logo} alt="Logo" />
-                </a>
+                <Link href="/">
+                  <a>
+                    <Image src={Logo} alt="Logo" />
+                  </a>
+                </Link>
               </div>
               <div className="text-xs mt-3">
                 © 2021 - Clínica Dentária Sorriso Popular. Criado por João
@@ -70,12 +73,11 @@ export default function Footer() {
                         return (
                           <>
                             <div key={index}>
-                              <a
-                                href={item.path}
-                                className="text-sm hover:underline"
-                              >
-                                {item.text}
-                              </a>
+                              <Link href={item.path}>
+                                <a className="text-sm hover:underline">
+                                  {item.text}
+                                </a>
+                              </Link>
                             </div>
                           </>
                         );
@@ -88,20 +90,16 @@ export default function Footer() {
             <div className="order-2 sm:order-3">
               <div className="text-sm font-bold uppercase">Siga-nos</div>
               <div className="flex items-center text-3xl space-x-6 mt-3">
-                <a
-                  href="https://www.facebook.com/SorrisoPopularChamusca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaIcons.FaFacebook className="hover:text-darkBlue" />
-                </a>
-                <a
-                  href="https://www.instagram.com/sorrisopopularchamusca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaIcons.FaInstagram className="hover:text-darkBlue" />
-                </a>
+                <Link href="https://www.facebook.com/SorrisoPopularChamusca/">
+                  <a target="_blank" rel="noopener noreferrer">
+                    <FaIcons.FaFacebook className="hover:text-darkBlue" />
+                  </a>
+                </Link>
+                <Link href="https://www.instagram.com/sorrisopopularchamusca/">
+                  <a target="_blank" rel="noopener noreferrer">
+                    <FaIcons.FaInstagram className="hover:text-darkBlue" />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
