@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 // Images
-import Cliente1 from "../../public/images/Clientes/Cliente1.jpg";
-import Cliente2 from "../../public/images/Clientes/Cliente2.jpg";
-import Cliente3 from "../../public/images/Clientes/Cliente3.jpg";
+import Cliente1 from "../../public/images/Clientes/Cliente1.webp";
+import Cliente2 from "../../public/images/Clientes/Cliente2.webp";
+import Cliente3 from "../../public/images/Clientes/Cliente3.webp";
 
 const data = [
   {
