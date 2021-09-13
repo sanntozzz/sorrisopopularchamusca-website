@@ -14,7 +14,7 @@ export default function Custom404() {
               A página que procuras parece não existir
             </div>
             <div className="flex justify-center">
-              <Link href="/">
+              <Link href="/" passHref>
                 <div className="bg-white w-full max-w-xs py-3 rounded flex justify-center cursor-pointer">
                   <div className="text-darkBlue">
                     <div className="space-x-3 flex items-center">

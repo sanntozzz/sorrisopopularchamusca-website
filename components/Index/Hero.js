@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="font-bold">
               E já está, tenha o sorriso que sempre sonhou!
             </div>
-            <Link href="/contacte-nos">
+            <Link href="/contacte-nos" passHref>
               <div className="bg-white rounded-md py-3 w-full flex justify-center cursor-pointer">
                 <div className="flex items-center space-x-3 text-darkBlue">
                   <span className="text-base text-center font-bold uppercase">

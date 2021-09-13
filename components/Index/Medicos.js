@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 // Images
-import Med1 from "../../public/images/Medicos/Med1.webp";
-import Med2 from "../../public/images/Medicos/Med2.webp";
-import Med3 from "../../public/images/Medicos/Med3.webp";
+import Med1 from "../../public/images/Medicos/Med1.jpg";
+import Med2 from "../../public/images/Medicos/Med2.jpg";
+import Med3 from "../../public/images/Medicos/Med3.jpg";
 
 const data = [
   {

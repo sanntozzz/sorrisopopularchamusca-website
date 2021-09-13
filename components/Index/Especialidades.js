@@ -134,7 +134,7 @@ export default function Especialidades() {
               })}
             </div>
             <div className="flex justify-center">
-              <Link href="/especialidades">
+              <Link href="/especialidades" passHref>
                 <div className="bg-white rounded-md py-3 w-full max-w-xs flex justify-center cursor-pointer drop-shadow-lg">
                   <div className="flex items-center space-x-3 text-darkBlue">
                     <span className="text-base font-bold uppercase">
