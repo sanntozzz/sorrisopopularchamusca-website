@@ -97,7 +97,10 @@ export default function Navbar() {
               return (
                 <div key={index}>
                   <Link href={item.path}>
-                    <a className="block text-gray-900 hover:text-darkBlue text-xl border-b-2  border-transparent  hover:border-darkBlue">
+                    <a
+                      className="block text-gray-900 hover:text-darkBlue text-xl border-b-2  border-transparent  hover:border-darkBlue"
+                      onClick={handleClick}
+                    >
                       {item.text}
                     </a>
                   </Link>
