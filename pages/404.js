@@ -1,9 +1,13 @@
+import Head from "next/head";
 import Link from "next/link";
 import * as FaIcons from "react-icons/fa";
 
 export default function Custom404() {
   return (
     <>
+      <Head>
+        <title>404 | Clínica Dentária Sorriso Popular</title>
+      </Head>
       <div className="bgContainer">
         <div className="min-h-screen flex items-center justify-center p-6">
           <div className="text-white text-center">

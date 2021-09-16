@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 
@@ -120,6 +121,9 @@ export default function EspecialidadesPage() {
 
   return (
     <>
+      <Head>
+        <title>Especialidades | Clínica Dentária Sorriso Popular</title>
+      </Head>
       <Layout>
         <div className="bgContainer">
           <div className="max-w-screen-2xl mx-auto px-6 py-12">

@@ -1,9 +1,13 @@
+import Head from "next/head"
 // Layout
 import Layout from "../components/Layout/Layout";
 
 export default function ContacteNosPage() {
   return (
     <>
+     <Head>
+       <title>Contacte-nos | Clínica Dentária Sorriso Popular</title>
+     </Head>
       <Layout>
         <div className="bgChamusca">
           <div className="max-w-screen-2xl mx-auto px-6 py-12 lg:py-24">
