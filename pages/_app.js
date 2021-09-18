@@ -6,9 +6,9 @@ const meta = {
   description:
     "Na Sorriso Popular Chamusca a Avaliação Oral é gratuita e sem compromisso! Será avaliado por um dos nossos médicos dentistas. Sem custos e sem compromisso!",
   type: "website",
-  url: "https://sorrisopopularchamusca.vercel.app/",
+  url: "https://www.sorrisopopularchamusca.com/",
   image:
-    "https://raw.githubusercontent.com/sanntozzz/sorrisopopularchamusca-website/main/public/images/DefaultLogo.png",
+    "https://raw.githubusercontent.com/sanntozzz/sorrisopopularchamusca-website/main/public/images/OG_Image.png?token=ASQGEXL7KHSRDCXNJFVWX4TBIXLAS",
 };
 
 function MyApp({ Component, pageProps }) {
@@ -53,7 +53,10 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         {/* Google Tag */}
-        <meta name="google-site-verification" content="N10qwANjMuAi9FjBoNS6CKP_0VKUKK_n-nIZZj1fzQ4" />
+        <meta
+          name="google-site-verification"
+          content="N10qwANjMuAi9FjBoNS6CKP_0VKUKK_n-nIZZj1fzQ4"
+        />
       </Head>
       <Component {...pageProps} />
     </>
