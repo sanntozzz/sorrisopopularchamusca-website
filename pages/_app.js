@@ -8,7 +8,7 @@ const meta = {
   type: "website",
   url: "https://www.sorrisopopularchamusca.com/",
   image:
-    "https://raw.githubusercontent.com/sanntozzz/sorrisopopularchamusca-website/main/public/images/OG_Image.png?token=ASQGEXL7KHSRDCXNJFVWX4TBIXLAS",
+    "https://raw.githubusercontent.com/sanntozzz/sorrisopopularchamusca-website/main/public/images/OG_Image.png",
 };
 
 function MyApp({ Component, pageProps }) {
