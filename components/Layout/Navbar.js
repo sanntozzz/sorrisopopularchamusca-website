@@ -11,18 +11,18 @@ const menu = [
     path: "/",
     text: "Home",
   },
-  {
-    path: "/sobre-nos",
-    text: "Sobre nós",
-  },
+  // {
+  //   path: "/sobre-nos",
+  //   text: "Sobre nós",
+  // },
   {
     path: "/especialidades",
     text: "Especialidades",
   },
-  {
-    path: "/acordos",
-    text: "Acordos",
-  },
+  // {
+  //   path: "/acordos",
+  //   text: "Acordos",
+  // },
   {
     path: "/contacte-nos",
     text: "Contacte-nos",

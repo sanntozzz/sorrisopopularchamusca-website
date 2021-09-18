@@ -9,37 +9,37 @@ const data = [
   {
     title: "Links",
     links: [
-      {
-        path: "/sobre-nos",
-        text: "Sobre nós",
-      },
+      // {
+      //   path: "/sobre-nos",
+      //   text: "Sobre nós",
+      // },
       {
         path: "/especialidades",
         text: "Especialidades",
       },
-      {
-        path: "/acordos",
-        text: "Acordos",
-      },
+      // {
+      //   path: "/acordos",
+      //   text: "Acordos",
+      // },
       {
         path: "/contacte-nos",
         text: "Contacte-nos",
       },
     ],
   },
-  {
-    title: "RGPD",
-    links: [
-      {
-        path: "/termos-e-condicoes",
-        text: "Termos e condições",
-      },
-      {
-        path: "/politicas-de-privacidade",
-        text: "Política de privacidade",
-      },
-    ],
-  },
+  // {
+  //   title: "RGPD",
+  //   links: [
+  //     {
+  //       path: "/termos-e-condicoes",
+  //       text: "Termos e condições",
+  //     },
+  //     {
+  //       path: "/politicas-de-privacidade",
+  //       text: "Política de privacidade",
+  //     },
+  //   ],
+  // },
 ];
 
 export default function Footer() {
