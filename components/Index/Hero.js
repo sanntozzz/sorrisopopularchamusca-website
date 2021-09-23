@@ -21,7 +21,7 @@ export default function Hero() {
                 return (
                   <div key={index}>
                     <FaIcons.FaCheckCircle className="inline-block" />
-                    <span className="font-medium ml-2">{item}</span>
+                    <span className="font-medium text-lg ml-2">{item}</span>
                   </div>
                 );
               })}

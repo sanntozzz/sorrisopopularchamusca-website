@@ -34,20 +34,25 @@ body {
 
 .bgChamusca {
   position: relative;
-  background-image: url("../public/images/Background/Chamusca.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 96, 137, 0.95),
+      rgba(17, 96, 137, 0.95)
+    ),
+    url("../public/images/Background/Chamusca.jpg");
   background-position: center;
-  background-blend-mode: color;
-  background-color: rgba(0, 0, 0, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bgHero {
-  position: relative;
-  background-image: url("../public/images/Background/Image1.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 96, 137, 0.9),
+      rgba(17, 96, 137, 0.9)
+    ),
+    url("../public/images/Background/Image1.png");
   background-position: 80%;
-  background-blend-mode: color;
-  background-color: rgba(0, 0, 0, 0.85);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
