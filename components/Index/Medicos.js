@@ -19,7 +19,7 @@ const Data = [
 export default function Medicos() {
   return (
     <>
-      <section class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+      <section className="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
         <div className="text-center md:text-left">
           <div className="text-darkBlue text-2xl font-bold">
             Os nossos médicos

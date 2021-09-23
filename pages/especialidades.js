@@ -153,7 +153,6 @@ export default function EspecialidadesPage() {
                       </div>
                       <div className="text-sm text-gray-600">{item.text}</div>
                     </div>
-                    {/*  */}
                     <div
                       className={`${
                         item.class ? "" : "hidden"

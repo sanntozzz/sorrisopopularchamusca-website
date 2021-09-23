@@ -17,7 +17,7 @@ export default function Hero() {
               À procura do sorriso que sempre sonhou?
             </div>
             <div className="space-y-6">
-              {Data.map((item) => {
+              {Data.map((item, index) => {
                 return (
                   <div key={index}>
                     <FaIcons.FaCheckCircle className="inline-block" />
