@@ -71,7 +71,7 @@ export default function Footer() {
           <div className="space-x-4 mx-auto md:mr-0 mt-6 md:mt-0">
             {SocialLinks.map((item, index) => {
               return (
-                <Link href={item.path} passHref>
+                <Link key={index} href={item.path} passHref>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
       <section className="max-w-screen-2xl mx-auto px-6 py-12">
         <div className="text-center md:text-left">
-          <div class="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-12">
             <div className="w-32 mx-auto md:m-0">
               <Link href="/">
                 <a>
@@ -105,14 +105,17 @@ export default function Footer() {
             {FooterLinks.map((item, index) => {
               return (
                 <div key={index} className="text-sm">
-                  <div class="text-gray-900 font-medium tracking-widest">
+                  <div className="text-gray-900 font-medium tracking-widest">
                     {item.title}
                   </div>
                   {item.links.map((item, index) => {
                     return (
-                      <div className="mt-2">
+                      <div key={index} className="mt-2">
                         <Link href={item.path}>
-                          <a key={index} class=" text-gray-600 hover:underline">
+                          <a
+                            key={index}
+                            className=" text-gray-600 hover:underline"
+                          >
                             {item.text}
                           </a>
                         </Link>

@@ -19,11 +19,11 @@ export default function Testemunhos() {
       <section className="bgContainer">
         <div className="max-w-screen-2xl mx-auto px-6 py-12 space-y-6">
           <div className="text-center md:text-left">
-            <div class="text-white text-2xl font-bold">
+            <div className="text-white text-2xl font-bold">
               Testemunho dos nossos clientes
             </div>
           </div>
-          <div class="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {Data.map((item, index) => {
               return (
                 <div

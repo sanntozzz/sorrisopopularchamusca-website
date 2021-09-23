@@ -19,14 +19,14 @@ export default function Hero() {
             <div className="space-y-6">
               {Data.map((item) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <FaIcons.FaCheckCircle className="inline-block" />
                     <span className="font-medium ml-2">{item}</span>
                   </div>
                 );
               })}
             </div>
-            <Link href="/onde-estamos">
+            <Link href="/onde-estamos" passHref>
               <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-4 w-full max-w-xs drop-shadow-lg flex justify-center">
                 <span className="font-bold uppercase leading-none">
                   Marque já a sua consulta

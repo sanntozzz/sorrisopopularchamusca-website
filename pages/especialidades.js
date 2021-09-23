@@ -126,9 +126,9 @@ export default function EspecialidadesPage() {
       </Head>
       <Layout>
         <section className="bgContainer">
-          <div class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
-            <div class="text-center text-white">
-              <div class="text-2xl font-bold">Os nossos serviços</div>
+          <div className="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+            <div className="text-center text-white">
+              <div className="text-2xl font-bold">Os nossos serviços</div>
               <div>
                 <FaIcons.FaInfoCircle className="inline-block" />
                 <span className="leading-none ml-1">
@@ -143,15 +143,15 @@ export default function EspecialidadesPage() {
                     <div
                       key={index}
                       onClick={item.onClick}
-                      class="bg-white p-6 rounded-lg text-center space-y-2 drop-shadow-lg  select-none cursor-pointer"
+                      className="bg-white p-6 rounded-lg text-center space-y-2 drop-shadow-lg  select-none cursor-pointer"
                     >
                       <div className="w-10 mx-auto">
                         <Image src={item.image} alt={item.title} />
                       </div>
-                      <div class="text-xl font-medium text-gray-900">
+                      <div className="text-xl font-medium text-gray-900">
                         {item.title}
                       </div>
-                      <div class="text-sm text-gray-600">{item.text}</div>
+                      <div className="text-sm text-gray-600">{item.text}</div>
                     </div>
                     {/*  */}
                     <div

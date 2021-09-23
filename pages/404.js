@@ -11,8 +11,8 @@ export default function Custom404() {
       <div className="bgContainer">
         <div className="min-h-screen px-6 py-12 flex justify-center items-center">
           <div>
-            <div class="text-white text-center">
-              <div class="text-2xl font-bold uppercase">
+            <div className="text-white text-center">
+              <div className="text-2xl font-bold uppercase">
                 404 | Página não encontrada
               </div>
               <div className="text-xl mt-2">
@@ -20,7 +20,7 @@ export default function Custom404() {
               </div>
             </div>
             <div className="flex justify-center mt-6">
-              <Link href="/">
+              <Link href="/" passHref>
                 <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-2 w-full max-w-xs drop-shadow-lg flex justify-center">
                   <div className="flex items-center space-x-2">
                     <span className="font-bold uppercase">

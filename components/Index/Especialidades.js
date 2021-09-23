@@ -64,9 +64,9 @@ export default function Especialidades() {
   return (
     <>
       <section className="bgContainer">
-        <div class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
-          <div class="text-white text-center">
-            <div class="text-2xl font-bold">Os nossos serviços</div>
+        <div className="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+          <div className="text-white text-center">
+            <div className="text-2xl font-bold">Os nossos serviços</div>
             <div>
               <FaIcons.FaInfoCircle className="inline-block" />
               <span className="ml-1">
@@ -81,15 +81,15 @@ export default function Especialidades() {
                   <div
                     key={index}
                     onClick={item.onClick}
-                    class="bg-white p-6 rounded-lg text-center space-y-2 drop-shadow-lg select-none cursor-pointer"
+                    className="bg-white p-6 rounded-lg text-center space-y-2 drop-shadow-lg select-none cursor-pointer"
                   >
                     <div className="w-10 mx-auto">
                       <Image src={item.image} alt={item.title} />
                     </div>
-                    <div class="text-xl font-medium text-gray-900">
+                    <div className="text-xl font-medium text-gray-900">
                       {item.title}
                     </div>
-                    <div class="text-sm text-gray-600">{item.text}</div>
+                    <div className="text-sm text-gray-600">{item.text}</div>
                   </div>
                   {/*  */}
                   <div
@@ -135,7 +135,7 @@ export default function Especialidades() {
             })}
           </div>
           <div className="flex justify-center">
-            <Link href="/especialidades">
+            <Link href="/especialidades" passHref>
               <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-4 w-full max-w-xs drop-shadow-lg flex justify-center">
                 <span className="font-bold uppercase leading-none">
                   Ver mais

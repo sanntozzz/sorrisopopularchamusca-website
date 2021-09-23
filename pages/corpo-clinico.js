@@ -33,29 +33,29 @@ export default function CorpoClinico() {
         <title>Corpo Clínico | Clínica Dentária Sorriso Popular</title>
       </Head>
       <Layout>
-        <section class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
-          <div class="text-center md:text-left">
-            <div class="text-darkBlue text-2xl font-bold">
+        <section className="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+          <div className="text-center md:text-left">
+            <div className="text-darkBlue text-2xl font-bold">
               Os nossos médicos
             </div>
             <div className="text-gray-600">
               Conheça os nossos profissionais de saúde oral.
             </div>
           </div>
-          <div class="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-12">
             {Data.map((item, index) => {
               return (
-                <div>
+                <div key={index}>
                   <div className="flex justify-center">
                     <div className="bg-darkBlue rounded-full p-6">
                       <FaIcons.FaUserMd className="text-white text-3xl" />
                     </div>
                   </div>
-                  <div class="text-center mt-4">
-                    <div class="text-gray-900 font-medium tracking-wider">
+                  <div className="text-center mt-4">
+                    <div className="text-gray-900 font-medium tracking-wider">
                       {item.title}
                     </div>
-                    <div class="text-gray-600">{item.text}</div>
+                    <div className="text-gray-600">{item.text}</div>
                   </div>
                 </div>
               );
