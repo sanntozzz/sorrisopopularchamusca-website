@@ -1,59 +1,59 @@
-import Image from "next/image";
-
-// Images
-import Med1 from "../../public/images/Medicos/Med1.webp";
-import Med2 from "../../public/images/Medicos/Med2.webp";
-import Med3 from "../../public/images/Medicos/Med3.webp";
+import * as FaIcons from "react-icons/fa";
+import Link from "next/link";
 
 const data = [
   {
-    image: Med1,
-    title: "Dra. Silva",
+    title: "Dra. Valéria Prudente",
     text: "Diretora Clínica",
   },
   {
-    image: Med2,
-    title: "Dr. Ernesto Prates",
-    text: "Ortodontia",
+    title: "Dra. Ana Castro",
+    text: "Médica Dentista",
   },
   {
-    image: Med3,
-    title: "Dra. Ana",
-    text: "Ortodontista",
+    title: "Dra. Diana",
+    text: "Médica Dentista",
   },
 ];
 
 export default function Medicos() {
   return (
     <>
-      <div className="bg-gray-50">
-        <div className="max-w-screen-2xl mx-auto px-6 py-12">
-          <div className="space-y-12">
-            <div className="text-4xl text-center font-bold">
-              <span className="text-darkBlue">Os nossos médicos</span>
-            </div>
-            <div className="grid md:grid-cols-3 gap-12">
-              {data.map((item, index) => {
-                return (
-                  <div key={index} className="space-y-6">
-                    <div className="flex justify-center">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        className="rounded-full"
-                      />
-                    </div>
-                    <div className="text-center">
-                      <div className="text-xl">{item.title}</div>
-                      <div className="text-sm">{item.text}</div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+      <section class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+        <div class="text-center md:text-left">
+          <div class="text-darkBlue text-2xl font-bold">Os nossos médicos</div>
+          <div className="text-gray-600">
+            Conheça os nossos profissionais de saúde oral.
           </div>
         </div>
-      </div>
+        <div class="grid md:grid-cols-3 gap-12">
+          {data.map((item, index) => {
+            return (
+              <div>
+                <div className="flex justify-center">
+                  <div className="bg-darkBlue rounded-full p-6">
+                    <FaIcons.FaUserMd className="text-white text-3xl" />
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <div class="text-gray-900 font-medium tracking-wider">
+                    {item.title}
+                  </div>
+                  <div class="text-gray-600">{item.text}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex justify-center">
+          <Link href="/corpo-clinico">
+            <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-4 w-full max-w-xs drop-shadow-lg flex justify-center">
+              <span className="font-bold uppercase leading-none">Ver mais</span>
+              <FaIcons.FaChevronRight className="ml-2" />
+            </div>
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

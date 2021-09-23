@@ -1,20 +1,20 @@
 import Layout from "../components/Layout/Layout";
 
 import Hero from "../components/Index/Hero";
-import Section1 from "../components/Index/Section1";
+import AboutUs from "../components/Index/AboutUs";
 import Especialidades from "../components/Index/Especialidades";
 import Medicos from "../components/Index/Medicos";
-import Clientes from "../components/Index/Clientes";
+import Testemunhos from "../components/Index/Testemunhos";
 
 export default function Home() {
   return (
     <>
       <Layout>
         <Hero />
-        <Section1 />
+        <AboutUs />
         <Especialidades />
         <Medicos />
-        <Clientes />
+        <Testemunhos />
       </Layout>
     </>
   );

@@ -13,11 +13,9 @@ module.exports = {
       red: colors.red,
       green: colors.green,
       blue: colors.blue,
+      yellow: colors.yellow,
     },
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
       colors: {
         darkBlue: "#116089",
       },

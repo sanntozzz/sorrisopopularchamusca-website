@@ -4,28 +4,28 @@ import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 
 // Logo
-import Logo from "../../public/logo/Logo.svg";
+import Logo from "../../public/logo/Logo_Transparent.svg";
 
-const menu = [
+const Menu = [
   {
     path: "/",
     text: "Home",
   },
-  // {
-  //   path: "/sobre-nos",
-  //   text: "Sobre nós",
-  // },
   {
     path: "/especialidades",
     text: "Especialidades",
   },
-  // {
-  //   path: "/acordos",
-  //   text: "Acordos",
-  // },
   {
-    path: "/contacte-nos",
-    text: "Contacte-nos",
+    path: "/corpo-clinico",
+    text: "Corpo Clínico",
+  },
+  {
+    path: "/acordos-parcerias",
+    text: "Acordos / Parcerias",
+  },
+  {
+    path: "/onde-estamos",
+    text: "Onde estamos",
   },
 ];
 
@@ -38,40 +38,20 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="hidden lg:block w-full bg-darkBlue text-white text-sm py-2 px-6">
+      <div className="bg-white border-b">
         <div className="max-w-screen-2xl mx-auto px-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-3">
-                <FaIcons.FaPhoneAlt />
-                <span>249 761 128</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <FaIcons.FaInbox />
-                <span>Clinchamusca25@gmail.com</span>
-              </div>
-            </div>
-            <div className="flex items-center space-x-3">
-              <FaIcons.FaMapMarkerAlt />
-              <span>Av. Almirante Gago Coutinho 25, 2140-053 Chamusca</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-full bg-white">
-        <div className="max-w-screen-2xl mx-auto px-6">
-          <div className="flex items-center justify-between py-3">
+          <div className="flex items-center justify-between py-4">
             <Link href="/">
-              <a className="flex items-center w-28">
+              <a className="flex items-center w-24">
                 <Image src={Logo} alt="Logo" />
               </a>
             </Link>
-            <div className="hidden lg:block space-x-9">
-              {menu.map((item, index) => {
+            <div className="hidden lg:block space-x-12">
+              {Menu.map((item, index) => {
                 return (
                   <div key={index} className="inline-block">
                     <Link href={item.path}>
-                      <a className="text-gray-900 hover:text-darkBlue text-sm font-bold border-b-2 px-2 border-transparent  hover:border-darkBlue">
+                      <a className="text-gray-900 font-medium hover:text-darkBlue">
                         {item.text}
                       </a>
                     </Link>
@@ -80,7 +60,7 @@ export default function Navbar() {
               })}
             </div>
             <FaIcons.FaBars
-              className="lg:hidden text-darkBlue text-2xl cursor-pointer"
+              className="lg:hidden text-2xl text-darkBlue cursor-pointer"
               onClick={handleClick}
             />
           </div>
@@ -89,25 +69,23 @@ export default function Navbar() {
       <div
         className={`${
           active ? "right-0" : "-right-full"
-        } lg:hidden z-20 fixed top-0 w-full h-full bg-white flex items-center justify-center transition-all duration-500`}
+        } lg:hidden z-50 fixed top-0 w-full min-h-full bg-white flex items-center justify-center transition-all duration-200`}
       >
-        <div className="flex justify-center items-center">
-          <div className="text-center space-y-12">
-            {menu.map((item, index) => {
-              return (
-                <div key={index}>
-                  <Link href={item.path}>
-                    <a
-                      className="block text-gray-900 hover:text-darkBlue text-xl border-b-2  border-transparent  hover:border-darkBlue"
-                      onClick={handleClick}
-                    >
-                      {item.text}
-                    </a>
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
+        <div className="text-center space-y-12">
+          {Menu.map((item, index) => {
+            return (
+              <div key={index}>
+                <Link href={item.path}>
+                  <a
+                    className="text-gray-900 font-medium hover:text-darkBlue"
+                    onClick={handleClick}
+                  >
+                    {item.text}
+                  </a>
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

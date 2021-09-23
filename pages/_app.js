@@ -52,11 +52,6 @@ function MyApp({ Component, pageProps }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* Google Tag */}
-        <meta
-          name="google-site-verification"
-          content="N10qwANjMuAi9FjBoNS6CKP_0VKUKK_n-nIZZj1fzQ4"
-        />
       </Head>
       <Component {...pageProps} />
     </>

@@ -1,110 +1,146 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
 
 // Logo
-import Logo from "../../public/logo/Logo.svg";
+import Logo from "../../public/logo/Logo_Transparent.svg";
 
-const data = [
+const FooterLinks = [
   {
     title: "Links",
     links: [
-      // {
-      //   path: "/sobre-nos",
-      //   text: "Sobre nós",
-      // },
       {
         path: "/especialidades",
         text: "Especialidades",
       },
-      // {
-      //   path: "/acordos",
-      //   text: "Acordos",
-      // },
       {
-        path: "/contacte-nos",
-        text: "Contacte-nos",
+        path: "/corpo-clinico",
+        text: "Corpo Clínico",
+      },
+      {
+        path: "/acordos-parcerias",
+        text: "Acordos / Parcerias",
+      },
+      {
+        path: "/onde-estamos",
+        text: "Onde estamos",
       },
     ],
   },
-  // {
-  //   title: "RGPD",
-  //   links: [
-  //     {
-  //       path: "/termos-e-condicoes",
-  //       text: "Termos e condições",
-  //     },
-  //     {
-  //       path: "/politicas-de-privacidade",
-  //       text: "Política de privacidade",
-  //     },
-  //   ],
-  // },
+  {
+    title: "RGPD",
+    links: [
+      {
+        path: "/politica-de-privacidade",
+        text: "Política de privacidade",
+      },
+    ],
+  },
+];
+
+const SocialLinks = [
+  {
+    icon: <SiIcons.SiFacebook />,
+    path: "https://www.facebook.com/SorrisoPopularChamusca/",
+    text: "Facebook",
+  },
+  {
+    icon: <SiIcons.SiInstagram />,
+    path: "https://www.instagram.com/sorrisopopularchamusca/",
+    text: "Instagram",
+  },
 ];
 
 export default function Footer() {
+  const yearNow = new Date().getFullYear();
+
   return (
     <>
-      <div className="bg-white">
-        <div className="max-w-screen-2xl mx-auto px-6 py-12">
-          <div className="grid sm:grid-cols-4 gap-12">
-            <div>
-              <div className="w-32">
-                <Link href="/">
-                  <a>
-                    <Image src={Logo} alt="Logo" />
-                  </a>
-                </Link>
-              </div>
-              <div className="text-xs mt-3">
-                © 2021 - Clínica Dentária Sorriso Popular. Criado por João
-                Santos
-              </div>
+      <section className="max-w-screen-2xl mx-auto px-6 py-12">
+        <div className="flex items-center md:flex-row flex-col">
+          <div className="text-center md:text-left">
+            <div className="text-xs font-medium tracking-widest mb-1">
+              Segue-nos nas redes sociais
             </div>
-            {data.map((item, index) => {
-              return (
-                <>
-                  <div key={index} className="order-3 sm:order-2">
-                    <div className="text-sm font-bold uppercase">
-                      {item.title}
-                    </div>
-                    <div className="mt-3 space-y-3">
-                      {item.links.map((item, index) => {
-                        return (
-                          <>
-                            <div key={index}>
-                              <Link href={item.path}>
-                                <a className="text-sm hover:underline">
-                                  {item.text}
-                                </a>
-                              </Link>
-                            </div>
-                          </>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </>
-              );
-            })}
-            <div className="order-2 sm:order-3">
-              <div className="text-sm font-bold uppercase">Siga-nos</div>
-              <div className="flex items-center text-3xl space-x-6 mt-3">
-                <Link href="https://www.facebook.com/SorrisoPopularChamusca/">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <FaIcons.FaFacebook className="hover:text-darkBlue" />
-                  </a>
-                </Link>
-                <Link href="https://www.instagram.com/sorrisopopularchamusca/">
-                  <a target="_blank" rel="noopener noreferrer">
-                    <FaIcons.FaInstagram className="hover:text-darkBlue" />
-                  </a>
-                </Link>
-              </div>
+            <div className="text-2xl font-bold text-darkBlue tracking-wider">
+              Mostra o teu sorriso!
             </div>
           </div>
+          <div className="space-x-4 mx-auto md:mr-0 mt-6 md:mt-0">
+            {SocialLinks.map((item, index) => {
+              return (
+                <Link href={item.path} passHref>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gray-100 text-gray-600 py-2 px-6 rounded-lg hover:bg-darkBlue hover:text-white"
+                  >
+                    <div className="text-2xl">{item.icon}</div>
+                    <div className="leading-none ml-4">
+                      <div className="text-xs">Segue-nos no</div>
+                      <div className="font-medium mt-1">{item.text}</div>
+                    </div>
+                  </a>
+                </Link>
+              );
+            })}
+          </div>
         </div>
+      </section>
+      <div className="max-w-screen-2xl mx-auto px-6">
+        <div className="border-t-2"></div>
       </div>
+      <section className="max-w-screen-2xl mx-auto px-6 py-12">
+        <div className="text-center md:text-left">
+          <div class="grid md:grid-cols-3 gap-12">
+            <div className="w-32 mx-auto md:m-0">
+              <Link href="/">
+                <a>
+                  <Image src={Logo} alt="Logo" />
+                </a>
+              </Link>
+            </div>
+            {FooterLinks.map((item, index) => {
+              return (
+                <div key={index} className="text-sm">
+                  <div class="text-gray-900 font-medium tracking-widest">
+                    {item.title}
+                  </div>
+                  {item.links.map((item, index) => {
+                    return (
+                      <div className="mt-2">
+                        <Link href={item.path}>
+                          <a key={index} class=" text-gray-600 hover:underline">
+                            {item.text}
+                          </a>
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <section className="bg-gray-100">
+        <div className="max-w-screen-2xl mx-auto px-6 py-4">
+          <div className="text-gray-500 text-sm text-center md:text-left">
+            © {yearNow} - Sorriso Popular Chamusca. Criado por
+            <Link href="https://joaosantos.vercel.app/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:underline ml-1"
+              >
+                João Santos
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

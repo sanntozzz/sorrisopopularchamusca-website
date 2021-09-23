@@ -51,7 +51,7 @@ export default function EspecialidadesPage() {
     setOdontopediatria(!showOdontopediatria);
   };
 
-  const data = [
+  const Data = [
     {
       onClick: openDentisteria,
       class: showDentisteria,
@@ -125,83 +125,79 @@ export default function EspecialidadesPage() {
         <title>Especialidades | Clínica Dentária Sorriso Popular</title>
       </Head>
       <Layout>
-        <div className="bgContainer">
-          <div className="max-w-screen-2xl mx-auto px-6 py-12">
-            <div className="space-y-12">
-              <div className="space-y-3">
-                <div className="text-4xl text-white text-center font-bold">
-                  Os nossos serviços
-                </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center text-center space-y-2 sm:space-x-2 sm:space-y-0 text-gray-200">
-                  <FaIcons.FaInfoCircle />
-                  <div className="font-bold">
-                    Clique em cima de um dos serviços para obter mais
-                    informações
-                  </div>
-                </div>
+        <section className="bgContainer">
+          <div class="max-w-screen-2xl mx-auto px-6 py-12 space-y-12">
+            <div class="text-center text-white">
+              <div class="text-2xl font-bold">Os nossos serviços</div>
+              <div>
+                <FaIcons.FaInfoCircle className="inline-block" />
+                <span className="leading-none ml-1">
+                  Clique em cima de um dos serviços para obter mais informações
+                </span>
               </div>
-              <div className="grid sm:grid-cols-3 gap-6">
-                {data.map((item, index) => {
-                  return (
-                    <>
-                      <div
-                        key={index}
-                        onClick={item.onClick}
-                        className="bg-white rounded-md w-full p-6 drop-shadow-md cursor-pointer"
-                      >
-                        <div className="w-10 mx-auto">
-                          <Image src={item.image} alt={item.title} />
-                        </div>
-                        <div className="text-lg text-center font-bold uppercase mt-3">
-                          {item.title}
-                        </div>
-                        <div className="text-sm text-center">{item.text}</div>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {Data.map((item, index) => {
+                return (
+                  <>
+                    <div
+                      key={index}
+                      onClick={item.onClick}
+                      class="bg-white p-6 rounded-lg text-center space-y-2 drop-shadow-lg  select-none cursor-pointer"
+                    >
+                      <div className="w-10 mx-auto">
+                        <Image src={item.image} alt={item.title} />
                       </div>
-                      <div
-                        className={`${
-                          item.class ? "" : "hidden"
-                        } fixed inset-0 z-10 bg-gray-900 bg-opacity-95`}
-                      >
-                        <div className="min-h-screen px-4 text-center">
-                          <span
-                            className="inline-block h-screen align-middle"
-                            aria-hidden="true"
-                          ></span>
-                          <div className="inline-block w-full max-w-3xl p-12 my-6 overflow-hidden align-middle transition-all transform bg-white rounded-md select-none">
-                            <div
-                              onClick={item.onClick}
-                              className="flex justify-end text-xl cursor-pointer"
-                            >
-                              <FaIcons.FaTimes />
-                            </div>
-                            <div className="mx-auto w-16">
-                              <Image src={item.image} alt={item.title} />
-                            </div>
-                            <div className="text-xl text-center font-bold uppercase mt-6 mb-3">
-                              {item.title}
-                            </div>
-                            <div className="space-y-3">
-                              {item.modaText.map((item, index) => {
-                                return (
-                                  <div
-                                    key={index}
-                                    className="text-sm text-left"
-                                  >
-                                    {item}
-                                  </div>
-                                );
-                              })}
-                            </div>
+                      <div class="text-xl font-medium text-gray-900">
+                        {item.title}
+                      </div>
+                      <div class="text-sm text-gray-600">{item.text}</div>
+                    </div>
+                    {/*  */}
+                    <div
+                      className={`${
+                        item.class ? "" : "hidden"
+                      } fixed inset-0 z-10 bg-gray-900 bg-opacity-95`}
+                    >
+                      <div className="min-h-screen px-6 text-center">
+                        <span
+                          className="inline-block h-screen align-middle"
+                          aria-hidden="true"
+                        ></span>
+                        <div className="bg-white inline-block w-full max-w-3xl p-12 my-6 align-middle   rounded-lg select-none space-y-2">
+                          <div
+                            onClick={item.onClick}
+                            className="flex justify-end"
+                          >
+                            <FaIcons.FaTimes className="cursor-pointer text-xl" />
+                          </div>
+                          <div className="w-10 mx-auto ">
+                            <Image src={item.image} alt={item.title} />
+                          </div>
+                          <div className="text-xl font-medium text-gray-900">
+                            {item.title}
+                          </div>
+                          <div className="space-y-3">
+                            {item.modaText.map((item, index) => {
+                              return (
+                                <div
+                                  key={index}
+                                  className="text-left text-sm text-gray-600 "
+                                >
+                                  {item}
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
-                    </>
-                  );
-                })}
-              </div>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
-        </div>
+        </section>
       </Layout>
     </>
   );

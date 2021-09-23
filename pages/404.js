@@ -9,24 +9,24 @@ export default function Custom404() {
         <title>404 | Clínica Dentária Sorriso Popular</title>
       </Head>
       <div className="bgContainer">
-        <div className="min-h-screen flex items-center justify-center p-6">
-          <div className="text-white text-center">
-            <div className="text-3xl xl:text-4xl font-bold uppercase">
-              404 | Página não encontrada
+        <div className="min-h-screen px-6 py-12 flex justify-center items-center">
+          <div>
+            <div class="text-white text-center">
+              <div class="text-2xl font-bold uppercase">
+                404 | Página não encontrada
+              </div>
+              <div className="text-xl mt-2">
+                A página que procuras parece não existir
+              </div>
             </div>
-            <div className="text-xl xl:text-2xl mt-3 mb-12">
-              A página que procuras parece não existir
-            </div>
-            <div className="flex justify-center">
-              <Link href="/" passHref>
-                <div className="bg-white w-full max-w-xs py-3 rounded flex justify-center cursor-pointer">
-                  <div className="text-darkBlue">
-                    <div className="space-x-3 flex items-center">
-                      <span className="text-sm xl:text-base font-bold uppercase">
-                        Voltar á página inicial
-                      </span>
-                      <FaIcons.FaHome />
-                    </div>
+            <div className="flex justify-center mt-6">
+              <Link href="/">
+                <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-2 w-full max-w-xs drop-shadow-lg flex justify-center">
+                  <div className="flex items-center space-x-2">
+                    <span className="font-bold uppercase">
+                      Voltar á página inicial
+                    </span>
+                    <FaIcons.FaHome />
                   </div>
                 </div>
               </Link>
