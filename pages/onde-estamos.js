@@ -78,7 +78,7 @@ export default function OndeEstamos() {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-gray-600 hover:underline"
+                      className="text-gray-600 hover:underline"
                     >
                       {item.text}
                     </a>

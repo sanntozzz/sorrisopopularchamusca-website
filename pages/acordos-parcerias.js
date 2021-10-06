@@ -40,7 +40,7 @@ export default function Acordos() {
                 </a>
               </Link>
             </div>
-            <div className="w-96">
+            <div className="max-w-sm">
               <Image src={SorrisoMais} alt="SorrisoMais" />
             </div>
             <div className="space-y-2">
@@ -72,7 +72,7 @@ export default function Acordos() {
                 </a>
               </Link>
             </div>
-            <div className="w-32">
+            <div className="max-w-sm">
               <Image src={EasyHealth} alt="EasyHealth" />
             </div>
             <div className="space-y-2">

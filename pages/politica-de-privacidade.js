@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 // Layout
 import Layout from "../components/Layout/Layout";
@@ -40,9 +41,11 @@ export default function Acordos() {
             </div>
             <div>
               O uso do{" "}
-              <a className="text-darkBlue hover:underline">
-                www.sorrisopopularchamusca.com/
-              </a>{" "}
+              <Link href="/">
+                <a className="text-darkBlue hover:underline">
+                  www.sorrisopopularchamusca.com/
+                </a>
+              </Link>{" "}
               pressupõe a aceitação desta POLITICA DE PRIVACIDADE. A Clínica
               Dentária Sorriso Popular reserva-se ao direito de alterar os
               termos da POLITICA DE PRIVACIDADE sem aviso prévio. Deste modo,
