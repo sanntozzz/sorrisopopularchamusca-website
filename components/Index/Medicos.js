@@ -49,7 +49,7 @@ export default function Medicos() {
         </div>
         <div className="flex justify-center">
           <Link href="/corpo-clinico" passHref>
-            <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-4 w-full max-w-xs drop-shadow-lg flex justify-center">
+            <div className="cursor-pointer text-darkBlue bg-white rounded-lg py-4 w-full max-w-xs shadow-lg flex justify-center">
               <span className="font-bold uppercase leading-none">Ver mais</span>
               <FaIcons.FaChevronRight className="ml-2" />
             </div>

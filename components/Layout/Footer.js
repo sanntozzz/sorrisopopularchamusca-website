@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="max-w-screen-2xl mx-auto px-6 py-4">
           <div className="text-gray-500 text-sm text-center md:text-left">
             © {yearNow} - Sorriso Popular Chamusca. Criado por
-            <Link href="https://joaosantos.vercel.app/">
+            <Link href="https://joaofcsantos-resume.vercel.app/">
               <a
                 target="_blank"
                 rel="noopener noreferrer"

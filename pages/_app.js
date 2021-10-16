@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import ScrollToTop from "../components/Layout/ScrollToTop";
 
 const meta = {
   title: "Clínica Dentária Sorriso Popular",
@@ -53,6 +54,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <ScrollToTop />
       <Component {...pageProps} />
     </>
   );
