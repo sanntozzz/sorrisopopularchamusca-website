@@ -8,6 +8,7 @@ import Layout from "../components/Layout/Layout";
 
 import SorrisoMais from "../public/images/AcordosParcerias/SorrisoMais.png";
 import EasyHealth from "../public/images/AcordosParcerias/EasyHealth.png";
+import Medicare from "../public/images/AcordosParcerias/Medicare.svg";
 
 export default function Acordos() {
   return (
@@ -99,6 +100,41 @@ export default function Acordos() {
                 A EasyHealth é uma empresa de consultoria, formação e serviços
                 na área da saúde, atuando sempre com a missão de simplificar o
                 acesso a saúde.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4 mt-12">
+            <div className="text-xl text-gray-900 font-bold">
+              <span>Medicare</span>
+              <Link href="https://www.medicare.pt/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-darkBlue"
+                >
+                  <FaIcons.FaLink className="inline-block ml-2" />
+                </a>
+              </Link>
+            </div>
+            <div className="max-w-sm">
+              <Image src={Medicare} alt="Medicare" />
+            </div>
+            <div className="space-y-2">
+              <p>
+                Com mais de 10 anos de experiência no mercado português,
+                consolidamos a liderança na comercialização de Planos de Saúde
+                com a excelência e diversidade das nossas soluções.
+              </p>
+              <p>
+                A Medicare é uma empresa de capitais 100% portugueses que
+                democratizou o acesso à saúde privada para milhões de famílias.
+                É com orgulho que apostamos em soluções inovadoras que mudaram
+                para sempre o dia-a-dia dos portugueses.
+              </p>
+              <p>
+                Com um crescimento constante e sustentado, fizemos da inovação
+                um dos pilares dos nossos valores para responder constantemente
+                às expectativas do mercado.
               </p>
             </div>
           </div>
