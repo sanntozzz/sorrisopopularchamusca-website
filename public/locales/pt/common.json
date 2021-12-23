@@ -1,0 +1,18 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "Especialidades": "Especialidades",
+    "CorpoClinico": "Corpo Clínico",
+    "AcordosParcerias": "Acordos / Parcerias",
+    "OndeEstamos": "Onde estamos",
+    "Contactos": "Contacte-nos"
+  },
+  "Error": {
+    "404": {
+      "Head": "404",
+      "Title": "Lamentamos, mas esta página não está disponível.",
+      "Text": "A ligação que seguiu pode ter sido quebrada, ou a página pode ter sido removida. "
+    },
+    "Button": "Voltar ao início"
+  }
+}
