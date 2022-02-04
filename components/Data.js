@@ -4,6 +4,7 @@ import SorrisoMais from "../public/images/AcordosParcerias/SorrisoMais.png";
 import EasyHealth from "../public/images/AcordosParcerias/EasyHealth.png";
 import Medicare from "../public/images/AcordosParcerias/Medicare.svg";
 import DentalRede from "../public/images/AcordosParcerias/DentalRede.jpg";
+import Multicare from "../public/images/AcordosParcerias/Multicare.png";
 
 export const dataAcordos = [
   {
@@ -42,6 +43,15 @@ export const dataAcordos = [
     image: DentalRede,
     description: [
       "A Dentalrede, é uma organização médica instalada a nível nacional, especializada na gestão e prestação de serviços médico-dentários a entidades seguradoras, empresas e grupos. Contando com uma rede de mais de 350 clínicas e 4000 médicos dentistas associados em Portugal, com extensão a Espanha, cumprindo com os mais altos requisitos de qualidade e competência.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Multicare",
+    link: "https://www.multicare.pt/PT/particulares/Paginas/default.aspx",
+    image: Multicare,
+    description: [
+      "​A Multicare começou por ser exclusivamente a marca do seguro de saúde do Grupo CGD. Dado o crescimento do setor e a importância estratégico do mesmo para o Grupo, foi constituída como seguradora Multicare - Seguros de Saúde, S.A. a 9 de março de 2007​",
     ],
   },
 ];
