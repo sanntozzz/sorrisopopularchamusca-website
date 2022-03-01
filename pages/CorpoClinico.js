@@ -56,11 +56,6 @@ function Cards() {
     },
     {
       id: 4,
-      title: "Dr. César Cruz",
-      text: "Médico Dentista",
-    },
-    {
-      id: 5,
       title: "Dr. Nuno Cruz",
       text: "Ortodontista",
     },
