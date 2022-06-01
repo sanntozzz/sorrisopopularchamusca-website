@@ -26,7 +26,7 @@ export default function Medicos() {
 function Cards() {
   return (
     <>
-      {dataMedicos.map((item) => {
+      {dataMedicos.slice(0, 3).map((item) => {
         return (
           <div key={item.id}>
             <FaIcons.FaUserMd className="mx-auto text-6xl text-primary" />

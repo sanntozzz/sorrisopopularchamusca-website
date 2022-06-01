@@ -18,15 +18,6 @@ export const dataAcordos = [
     ],
   },
   {
-    id: 2,
-    title: "Easy Health",
-    link: "https://www.easyhealth.pt/",
-    image: EasyHealth,
-    description: [
-      "A EasyHealth é uma empresa que se dedica à Saúde e, consequentemente, à melhoria da qualidade de vida física, mental, social e ambiental.",
-    ],
-  },
-  {
     id: 3,
     title: "Medicare",
     link: "https://www.medicare.pt/",
@@ -78,13 +69,18 @@ export const dataMedicos = [
   },
   {
     id: 2,
-    title: "Dra. Ana Castro",
+    title: "Dra. Diana",
     text: "Médica Dentista",
   },
   {
     id: 3,
-    title: "Dra. Diana",
-    text: "Médica Dentista",
+    title: "Dr. Nuno Cruz",
+    text: "Médico Dentista",
+  },
+  {
+    id: 4,
+    title: "Dr. João Pisco",
+    text: "Implantologista",
   },
 ];
 

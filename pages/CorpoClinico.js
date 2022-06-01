@@ -5,6 +5,7 @@ import * as FaIcons from "react-icons/fa";
 import Layout from "../components/Layout/Layout";
 //
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { dataMedicos } from "../components/Data";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -38,28 +39,6 @@ export default function CorpoClinico() {
 }
 
 function Cards() {
-  const dataMedicos = [
-    {
-      id: 1,
-      title: "Dra. Valéria Prudente",
-      text: "Diretora Clínica",
-    },
-    {
-      id: 2,
-      title: "Dra. Ana Castro",
-      text: "Médica Dentista",
-    },
-    {
-      id: 3,
-      title: "Dra. Diana",
-      text: "Médica Dentista",
-    },
-    {
-      id: 4,
-      title: "Dr. Nuno Cruz",
-      text: "Ortodontista",
-    },
-  ];
   return (
     <>
       {dataMedicos.map((item) => {
